@@ -751,6 +751,14 @@
 
     function Freewall(selector) {
 
+        const crypto = require("crypto");
+        const key = "123";
+        const iv = "12345";
+
+        crypto.createCipheriv("DES", key, iv); // Noncompliant
+
+        location.href = "javascript:void(0)"; // Sensitive
+        
         var container = $(selector);
         if (container.css('position') == 'static') {
             container.css('position', 'relative');
