@@ -55,7 +55,7 @@ Step 2 : MAINTAINER "Daniel Garcia aka (cr0hn)" <cr0hn@cr0hn.com>
 Step 3 : ADD init.sql /docker-entrypoint-initdb.d/
 ....
 ```
-
+asdasd
 ## Running
 
 Once docker compose was finished, we can open a browser and type the URL: `127.0.0.1:3000` (or the IP where you deployed the project):
